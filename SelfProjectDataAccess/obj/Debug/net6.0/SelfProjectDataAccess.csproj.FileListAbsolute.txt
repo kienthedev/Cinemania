@@ -1,0 +1,15 @@
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\bin\Debug\net6.0\SelfProjectDataAccess.deps.json
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\bin\Debug\net6.0\SelfProjectDataAccess.runtimeconfig.json
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\bin\Debug\net6.0\SelfProjectDataAccess.dll
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\bin\Debug\net6.0\SelfProjectDataAccess.pdb
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\obj\Debug\net6.0\SelfProjectDataAccess.csproj.AssemblyReference.cache
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\obj\Debug\net6.0\SelfProjectDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\obj\Debug\net6.0\SelfProjectDataAccess.AssemblyInfoInputs.cache
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\obj\Debug\net6.0\SelfProjectDataAccess.AssemblyInfo.cs
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\obj\Debug\net6.0\SelfProjectDataAccess.csproj.CoreCompileInputs.cache
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\obj\Debug\net6.0\SelfProjectDataAccess.dll
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\obj\Debug\net6.0\refint\SelfProjectDataAccess.dll
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\obj\Debug\net6.0\SelfProjectDataAccess.pdb
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\obj\Debug\net6.0\SelfProjectDataAccess.genruntimeconfig.cache
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\obj\Debug\net6.0\ref\SelfProjectDataAccess.dll
+D:\MAJOR\Fresher Fsoft\NEFW\SelfProject\SelfProjectDataAccess\bin\Debug\net6.0\appsettings.json
