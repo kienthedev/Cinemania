@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mJq+O9gd3KL+H4MRsrcmP29Ys8WsfYwl2x/m9PxjAWO9IaZL8UvneUh9xF3QP+PJviwjJU1WqQIlp4AdAviSbA==",
+  "dgSpecHash": "qNAM5Cfdv16Wik3cHZAij+zo75Bh4xyUWTWEo7N4YK0OMsyeiTdzzwwg4Y6/Wqk2sO82qW7cPIkEBVNWg3ssZQ==",
   "success": true,
-  "projectFilePath": "D:\\MAJOR\\Fresher Fsoft\\NEFW\\SelfProject\\SelfProject\\SelfProjectAPI.csproj",
+  "projectFilePath": "D:\\MAJOR\\Fresher Fsoft\\Cinemania\\SelfProject\\SelfProjectAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kien\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Kien\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

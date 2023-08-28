@@ -97,6 +97,21 @@ namespace SelfProjectDataAccess.Migrations
                     b.ToTable("DirectorNews", (string)null);
                 });
 
+            modelBuilder.Entity("MovieAward", b =>
+                {
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AwardId")
+                        .HasColumnType("int");
+
+                    b.HasKey("MovieId", "AwardId");
+
+                    b.HasIndex("AwardId");
+
+                    b.ToTable("MovieAwards", (string)null);
+                });
+
             modelBuilder.Entity("MovieGenre", b =>
                 {
                     b.Property<int>("MovieId")
@@ -145,7 +160,10 @@ namespace SelfProjectDataAccess.Migrations
             modelBuilder.Entity("SelfProjectDataAccess.Models.Actor", b =>
                 {
                     b.Property<int>("ActorId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ActorId"), 1L, 1);
 
                     b.Property<int?>("Age")
                         .HasColumnType("int");
@@ -184,7 +202,10 @@ namespace SelfProjectDataAccess.Migrations
             modelBuilder.Entity("SelfProjectDataAccess.Models.Award", b =>
                 {
                     b.Property<int>("AwardId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AwardId"), 1L, 1);
 
                     b.Property<int?>("ActorId")
                         .IsRequired()
@@ -225,7 +246,10 @@ namespace SelfProjectDataAccess.Migrations
             modelBuilder.Entity("SelfProjectDataAccess.Models.Comment", b =>
                 {
                     b.Property<int>("CommentId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CommentId"), 1L, 1);
 
                     b.Property<string>("Content")
                         .IsRequired()
@@ -257,7 +281,10 @@ namespace SelfProjectDataAccess.Migrations
             modelBuilder.Entity("SelfProjectDataAccess.Models.Director", b =>
                 {
                     b.Property<int>("DirectorId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DirectorId"), 1L, 1);
 
                     b.Property<int?>("Age")
                         .HasColumnType("int");
@@ -296,7 +323,10 @@ namespace SelfProjectDataAccess.Migrations
             modelBuilder.Entity("SelfProjectDataAccess.Models.Genre", b =>
                 {
                     b.Property<int>("GenreId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GenreId"), 1L, 1);
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -315,7 +345,10 @@ namespace SelfProjectDataAccess.Migrations
             modelBuilder.Entity("SelfProjectDataAccess.Models.Language", b =>
                 {
                     b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("IsoCode")
                         .IsRequired()
@@ -340,7 +373,10 @@ namespace SelfProjectDataAccess.Migrations
             modelBuilder.Entity("SelfProjectDataAccess.Models.Movie", b =>
                 {
                     b.Property<int>("MovieId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MovieId"), 1L, 1);
 
                     b.Property<decimal?>("BoxOffice")
                         .HasColumnType("decimal(18,2)");
@@ -391,7 +427,10 @@ namespace SelfProjectDataAccess.Migrations
             modelBuilder.Entity("SelfProjectDataAccess.Models.News", b =>
                 {
                     b.Property<int>("NewsId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NewsId"), 1L, 1);
 
                     b.Property<int?>("ActorId")
                         .IsRequired()
@@ -436,7 +475,10 @@ namespace SelfProjectDataAccess.Migrations
             modelBuilder.Entity("SelfProjectDataAccess.Models.Rate", b =>
                 {
                     b.Property<int>("RateId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RateId"), 1L, 1);
 
                     b.Property<int>("MovieId")
                         .HasColumnType("int");
@@ -462,11 +504,10 @@ namespace SelfProjectDataAccess.Migrations
             modelBuilder.Entity("SelfProjectDataAccess.Models.Tag", b =>
                 {
                     b.Property<int>("TagId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TagId"), 1L, 1);
 
                     b.Property<string>("TagName")
                         .IsRequired()
@@ -481,7 +522,10 @@ namespace SelfProjectDataAccess.Migrations
             modelBuilder.Entity("SelfProjectDataAccess.Models.User", b =>
                 {
                     b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"), 1L, 1);
 
                     b.Property<string>("Address")
                         .IsRequired()
@@ -557,7 +601,10 @@ namespace SelfProjectDataAccess.Migrations
             modelBuilder.Entity("SelfProjectDataAccess.Models.Writer", b =>
                 {
                     b.Property<int>("WriterId")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("WriterId"), 1L, 1);
 
                     b.Property<int?>("Age")
                         .HasColumnType("int");
@@ -681,6 +728,21 @@ namespace SelfProjectDataAccess.Migrations
                         .HasForeignKey("NewsId")
                         .IsRequired()
                         .HasConstraintName("FK_DirectorNews_News");
+                });
+
+            modelBuilder.Entity("MovieAward", b =>
+                {
+                    b.HasOne("SelfProjectDataAccess.Models.Award", null)
+                        .WithMany()
+                        .HasForeignKey("AwardId")
+                        .IsRequired()
+                        .HasConstraintName("FK_MovieAwards_Award");
+
+                    b.HasOne("SelfProjectDataAccess.Models.Movie", null)
+                        .WithMany()
+                        .HasForeignKey("MovieId")
+                        .IsRequired()
+                        .HasConstraintName("FK_MovieAwards_Movie");
                 });
 
             modelBuilder.Entity("MovieGenre", b =>

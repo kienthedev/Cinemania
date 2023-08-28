@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P+Y5nGOpndvnRirmPrC1kyAk835eT9xcoDgivE5UoEmKzQQ4KJFjrgsmlnNwFyAVF+8NN20flPHYAvT/Nq648g==",
+  "dgSpecHash": "mdjBOjBOICnX7vvgaJRW92nL0UL2pZGVb6lQS4EObKzd9k5H4H1K0BDqXElKH3Xb0a+kQkgUs6G0RZ84KQjsSA==",
   "success": true,
-  "projectFilePath": "D:\\MAJOR\\Fresher Fsoft\\NEFW\\SelfProject\\SelfProjectDataAccess\\SelfProjectDataAccess.csproj",
+  "projectFilePath": "D:\\MAJOR\\Fresher Fsoft\\Cinemania\\SelfProjectDataAccess\\SelfProjectDataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kien\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Kien\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

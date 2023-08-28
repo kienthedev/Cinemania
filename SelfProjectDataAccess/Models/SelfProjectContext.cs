@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
 namespace SelfProjectDataAccess.Models
@@ -47,8 +44,6 @@ namespace SelfProjectDataAccess.Models
         {
             modelBuilder.Entity<Actor>(entity =>
             {
-                entity.Property(e => e.ActorId).ValueGeneratedNever();
-
                 entity.Property(e => e.BirthDate).HasColumnType("datetime");
 
                 entity.Property(e => e.Gender).HasMaxLength(50);
@@ -88,8 +83,6 @@ namespace SelfProjectDataAccess.Models
 
             modelBuilder.Entity<Award>(entity =>
             {
-                entity.Property(e => e.AwardId).ValueGeneratedNever();
-
                 entity.Property(e => e.Category).HasMaxLength(255);
 
                 entity.Property(e => e.Name).HasMaxLength(255);
@@ -114,8 +107,6 @@ namespace SelfProjectDataAccess.Models
 
             modelBuilder.Entity<Comment>(entity =>
             {
-                entity.Property(e => e.CommentId).ValueGeneratedNever();
-
                 entity.Property(e => e.Time).HasColumnType("datetime");
 
                 entity.HasOne(d => d.Movie)
@@ -131,8 +122,6 @@ namespace SelfProjectDataAccess.Models
 
             modelBuilder.Entity<Director>(entity =>
             {
-                entity.Property(e => e.DirectorId).ValueGeneratedNever();
-
                 entity.Property(e => e.BirthDate).HasColumnType("datetime");
 
                 entity.Property(e => e.Gender).HasMaxLength(50);
@@ -183,15 +172,11 @@ namespace SelfProjectDataAccess.Models
 
             modelBuilder.Entity<Genre>(entity =>
             {
-                entity.Property(e => e.GenreId).ValueGeneratedNever();
-
                 entity.Property(e => e.GenreName).HasMaxLength(100);
             });
 
             modelBuilder.Entity<Language>(entity =>
             {
-                entity.Property(e => e.Id).ValueGeneratedNever();
-
                 entity.Property(e => e.IsoCode).HasMaxLength(2);
 
                 entity.Property(e => e.Name).HasMaxLength(100);
@@ -201,8 +186,6 @@ namespace SelfProjectDataAccess.Models
 
             modelBuilder.Entity<Movie>(entity =>
             {
-                entity.Property(e => e.MovieId).ValueGeneratedNever();
-
                 entity.Property(e => e.BoxOffice).HasColumnType("decimal(18, 2)");
 
                 entity.Property(e => e.Country).HasMaxLength(100);
@@ -268,8 +251,6 @@ namespace SelfProjectDataAccess.Models
 
             modelBuilder.Entity<News>(entity =>
             {
-                entity.Property(e => e.NewsId).ValueGeneratedNever();
-
                 entity.Property(e => e.Category).HasMaxLength(50);
 
                 entity.Property(e => e.DatePublished).HasColumnType("datetime");
@@ -294,8 +275,6 @@ namespace SelfProjectDataAccess.Models
 
             modelBuilder.Entity<Rate>(entity =>
             {
-                entity.Property(e => e.RateId).ValueGeneratedNever();
-
                 entity.Property(e => e.NumericRating).HasColumnType("decimal(5, 2)");
 
                 entity.Property(e => e.Time).HasColumnType("datetime");
@@ -315,15 +294,11 @@ namespace SelfProjectDataAccess.Models
 
             modelBuilder.Entity<Tag>(entity =>
             {
-                entity.Property(e => e.TagId).ValueGeneratedNever();
-
                 entity.Property(e => e.TagName).HasMaxLength(100);
             });
 
             modelBuilder.Entity<User>(entity =>
             {
-                entity.Property(e => e.UserId).ValueGeneratedNever();
-
                 entity.Property(e => e.Address).HasMaxLength(255);
 
                 entity.Property(e => e.BirthDate).HasColumnType("datetime");
@@ -362,8 +337,6 @@ namespace SelfProjectDataAccess.Models
 
             modelBuilder.Entity<Writer>(entity =>
             {
-                entity.Property(e => e.WriterId).ValueGeneratedNever();
-
                 entity.Property(e => e.BirthDate).HasColumnType("datetime");
 
                 entity.Property(e => e.Gender).HasMaxLength(50);

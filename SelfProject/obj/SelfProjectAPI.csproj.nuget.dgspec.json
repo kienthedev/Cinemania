@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MAJOR\\Fresher Fsoft\\NEFW\\SelfProject\\SelfProject\\SelfProjectAPI.csproj": {}
+    "D:\\MAJOR\\Fresher Fsoft\\Cinemania\\SelfProject\\SelfProjectAPI.csproj": {}
   },
   "projects": {
-    "D:\\MAJOR\\Fresher Fsoft\\NEFW\\SelfProject\\SelfProjectDataAccess\\SelfProjectDataAccess.csproj": {
+    "D:\\MAJOR\\Fresher Fsoft\\Cinemania\\SelfProjectDataAccess\\SelfProjectDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MAJOR\\Fresher Fsoft\\NEFW\\SelfProject\\SelfProjectDataAccess\\SelfProjectDataAccess.csproj",
+        "projectUniqueName": "D:\\MAJOR\\Fresher Fsoft\\Cinemania\\SelfProjectDataAccess\\SelfProjectDataAccess.csproj",
         "projectName": "SelfProjectDataAccess",
-        "projectPath": "D:\\MAJOR\\Fresher Fsoft\\NEFW\\SelfProject\\SelfProjectDataAccess\\SelfProjectDataAccess.csproj",
+        "projectPath": "D:\\MAJOR\\Fresher Fsoft\\Cinemania\\SelfProjectDataAccess\\SelfProjectDataAccess.csproj",
         "packagesPath": "C:\\Users\\Kien\\.nuget\\packages\\",
-        "outputPath": "D:\\MAJOR\\Fresher Fsoft\\NEFW\\SelfProject\\SelfProjectDataAccess\\obj\\",
+        "outputPath": "D:\\MAJOR\\Fresher Fsoft\\Cinemania\\SelfProjectDataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kien\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,14 +93,14 @@
         }
       }
     },
-    "D:\\MAJOR\\Fresher Fsoft\\NEFW\\SelfProject\\SelfProject\\SelfProjectAPI.csproj": {
+    "D:\\MAJOR\\Fresher Fsoft\\Cinemania\\SelfProject\\SelfProjectAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MAJOR\\Fresher Fsoft\\NEFW\\SelfProject\\SelfProject\\SelfProjectAPI.csproj",
+        "projectUniqueName": "D:\\MAJOR\\Fresher Fsoft\\Cinemania\\SelfProject\\SelfProjectAPI.csproj",
         "projectName": "SelfProjectAPI",
-        "projectPath": "D:\\MAJOR\\Fresher Fsoft\\NEFW\\SelfProject\\SelfProject\\SelfProjectAPI.csproj",
+        "projectPath": "D:\\MAJOR\\Fresher Fsoft\\Cinemania\\SelfProject\\SelfProjectAPI.csproj",
         "packagesPath": "C:\\Users\\Kien\\.nuget\\packages\\",
-        "outputPath": "D:\\MAJOR\\Fresher Fsoft\\NEFW\\SelfProject\\SelfProject\\obj\\",
+        "outputPath": "D:\\MAJOR\\Fresher Fsoft\\Cinemania\\SelfProject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kien\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -117,8 +117,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\MAJOR\\Fresher Fsoft\\NEFW\\SelfProject\\SelfProjectDataAccess\\SelfProjectDataAccess.csproj": {
-                "projectPath": "D:\\MAJOR\\Fresher Fsoft\\NEFW\\SelfProject\\SelfProjectDataAccess\\SelfProjectDataAccess.csproj"
+              "D:\\MAJOR\\Fresher Fsoft\\Cinemania\\SelfProjectDataAccess\\SelfProjectDataAccess.csproj": {
+                "projectPath": "D:\\MAJOR\\Fresher Fsoft\\Cinemania\\SelfProjectDataAccess\\SelfProjectDataAccess.csproj"
               }
             }
           }
